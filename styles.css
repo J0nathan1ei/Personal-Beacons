@@ -1,0 +1,227 @@
+:root {
+  color-scheme: light;
+  --ink: #1d1d1f;
+  --muted: #788397;
+  --panel: rgba(255, 255, 255, 0.94);
+  --panel-edge: rgba(255, 255, 255, 0.7);
+  --cyan: #13d5c9;
+  --blue: #3274ff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  min-height: 100%;
+  background: #b7c4cc;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", sans-serif;
+  color: var(--ink);
+  background:
+    radial-gradient(circle at 52% 0%, rgba(255, 255, 255, 0.42), transparent 28rem),
+    linear-gradient(rgba(124, 143, 153, 0.26) 2px, transparent 2px),
+    linear-gradient(90deg, rgba(124, 143, 153, 0.26) 2px, transparent 2px),
+    linear-gradient(155deg, #c5d0d7 0%, #aebbc3 50%, #9faeb8 100%);
+  background-size: auto, 180px 180px, 180px 180px, auto;
+  background-position: center top, -18px -16px, -18px -16px, center;
+  overflow-x: hidden;
+}
+
+body::before {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  content: "";
+  background: rgba(213, 222, 226, 0.36);
+  backdrop-filter: blur(5px);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.page-shell {
+  width: min(100%, 1240px);
+  margin: 0 auto;
+  padding: 0 42px 56px;
+}
+
+.hero {
+  display: grid;
+  justify-items: center;
+  padding: 0 0 68px;
+  text-align: center;
+}
+
+.avatar {
+  width: min(390px, 34vw);
+  min-width: 230px;
+  aspect-ratio: 1.12 / 1;
+  object-fit: cover;
+  border: 3px solid var(--blue);
+  border-radius: 22px;
+  box-shadow:
+    0 0 0 5px rgba(19, 213, 201, 0.86),
+    0 14px 36px rgba(13, 70, 96, 0.18);
+}
+
+.hero h1 {
+  margin: 128px 0 34px;
+  font-size: clamp(3.6rem, 10vw, 5.65rem);
+  font-weight: 850;
+  line-height: 0.95;
+  letter-spacing: 0;
+}
+
+.socials {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 28px;
+}
+
+.socials a {
+  display: grid;
+  width: 48px;
+  height: 48px;
+  place-items: center;
+  transition:
+    transform 180ms ease,
+    opacity 180ms ease;
+}
+
+.socials a:hover {
+  opacity: 0.72;
+  transform: translateY(-2px);
+}
+
+.socials svg {
+  width: 47px;
+  height: 47px;
+  fill: none;
+  stroke: #1b1b1c;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 2.1;
+}
+
+.socials a:last-child svg {
+  fill: #1b1b1c;
+  stroke-width: 1.8;
+}
+
+.socials a:last-child svg path {
+  stroke: #f2f2f2;
+}
+
+.links {
+  display: grid;
+  gap: 18px;
+}
+
+.link-pill {
+  display: grid;
+  min-height: 132px;
+  place-items: center;
+  padding: 26px 44px;
+  text-align: center;
+  background: var(--panel);
+  border: 1px solid var(--panel-edge);
+  border-radius: 56px;
+  box-shadow:
+    0 13px 22px rgba(39, 55, 67, 0.16),
+    inset 0 1px 0 rgba(255, 255, 255, 0.95);
+  transition:
+    transform 180ms ease,
+    box-shadow 180ms ease,
+    background 180ms ease;
+}
+
+.link-pill:hover,
+.link-pill:focus-visible {
+  background: #fff;
+  box-shadow:
+    0 18px 26px rgba(39, 55, 67, 0.21),
+    inset 0 1px 0 rgba(255, 255, 255, 0.96);
+  transform: translateY(-3px);
+  outline: none;
+}
+
+.link-pill span {
+  display: block;
+  max-width: 100%;
+  overflow-wrap: anywhere;
+  font-size: clamp(1.62rem, 4.8vw, 2.05rem);
+  font-weight: 850;
+  line-height: 1.15;
+  letter-spacing: 0;
+}
+
+.link-pill small {
+  display: block;
+  margin-top: 16px;
+  color: var(--muted);
+  font-size: clamp(1.12rem, 3vw, 1.45rem);
+  font-weight: 650;
+  line-height: 1.1;
+}
+
+@media (max-width: 640px) {
+  body {
+    background-size: auto, 112px 112px, 112px 112px, auto;
+  }
+
+  .page-shell {
+    padding: 0 18px 36px;
+  }
+
+  .hero {
+    padding-bottom: 44px;
+  }
+
+  .avatar {
+    width: min(72vw, 290px);
+    min-width: 0;
+    border-radius: 18px;
+  }
+
+  .hero h1 {
+    margin: 82px 0 24px;
+    font-size: clamp(3.15rem, 15vw, 4.5rem);
+  }
+
+  .socials {
+    gap: 18px;
+  }
+
+  .socials a {
+    width: 40px;
+    height: 40px;
+  }
+
+  .socials svg {
+    width: 39px;
+    height: 39px;
+  }
+
+  .links {
+    gap: 14px;
+  }
+
+  .link-pill {
+    min-height: 114px;
+    padding: 22px 20px;
+    border-radius: 42px;
+  }
+
+  .link-pill small {
+    margin-top: 12px;
+  }
+}
