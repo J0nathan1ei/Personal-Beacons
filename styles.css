@@ -119,11 +119,21 @@ button {
 }
 
 .hero h1 {
-  margin: 72px 0 24px;
+  margin: 72px 0 14px;
   font-size: clamp(3rem, 5.8vw, 4.25rem);
   font-weight: 850;
   line-height: 0.95;
   letter-spacing: 0;
+}
+
+.signature {
+  max-width: min(92%, 620px);
+  margin: 0 0 24px;
+  color: rgba(58, 80, 89, 0.76);
+  font-size: clamp(0.9rem, 1.55vw, 1.04rem);
+  font-weight: 650;
+  line-height: 1.35;
+  text-wrap: balance;
 }
 
 .socials {
@@ -278,9 +288,17 @@ button {
   }
 
   .hero h1 {
-    margin: 28px 0 14px;
+    margin: 28px 0 8px;
     font-size: clamp(2.05rem, 9vw, 2.55rem);
     line-height: 1;
+  }
+
+  .signature {
+    max-width: 86%;
+    margin-bottom: 14px;
+    color: rgba(58, 80, 89, 0.78);
+    font-size: clamp(0.72rem, 3.15vw, 0.84rem);
+    line-height: 1.28;
   }
 
   .socials {
