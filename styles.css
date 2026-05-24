@@ -232,73 +232,81 @@ button {
 
 @media (max-width: 640px) {
   body {
-    background-size: auto, 112px 112px, 112px 112px, auto;
+    background-size: auto, 96px 96px, 96px 96px, auto;
   }
 
   .page-shell {
-    padding: 0 18px 36px;
+    padding: 0 20px 34px;
   }
 
   .language-switch {
-    top: 12px;
-    right: 12px;
-    padding: 8px 10px;
+    position: static;
+    width: max-content;
+    margin: 14px 0 10px auto;
+    padding: 7px 10px;
+    box-shadow: 0 8px 18px rgba(39, 55, 67, 0.11);
   }
 
   .lang-option {
-    font-size: 0.86rem;
+    font-size: 0.82rem;
   }
 
   .hero {
-    padding-bottom: 44px;
+    padding-bottom: 30px;
   }
 
   .avatar {
-    width: min(72vw, 290px);
+    width: min(62vw, 232px);
     min-width: 0;
-    border-radius: 18px;
+    border-radius: 16px;
+    border-width: 2px;
+    box-shadow:
+      0 0 0 4px rgba(117, 132, 137, 0.32),
+      0 12px 26px rgba(81, 96, 102, 0.22);
   }
 
   .hero h1 {
-    margin: 82px 0 24px;
-    font-size: clamp(3.15rem, 15vw, 4.5rem);
+    margin: 38px 0 18px;
+    font-size: clamp(2.45rem, 11vw, 3.12rem);
+    line-height: 1;
   }
 
   .socials {
-    gap: 18px;
+    gap: 15px;
   }
 
   .socials a {
-    width: 40px;
-    height: 40px;
+    width: 33px;
+    height: 33px;
   }
 
   .socials svg {
-    width: 39px;
-    height: 39px;
+    width: 32px;
+    height: 32px;
   }
 
   .links {
-    gap: 14px;
+    gap: 12px;
   }
 
   .link-pill {
-    min-height: 114px;
-    padding: 22px 20px;
-    border-radius: 42px;
+    min-height: 86px;
+    padding: 15px 18px;
+    border-radius: 32px;
+    box-shadow:
+      0 9px 17px rgba(39, 55, 67, 0.13),
+      inset 0 1px 0 rgba(255, 255, 255, 0.95);
   }
 
   .link-pill span {
-    font-size: clamp(1.48rem, 6vw, 2rem);
+    font-size: clamp(1.08rem, 4.9vw, 1.34rem);
+    line-height: 1.16;
   }
 
   .link-pill small {
-    max-width: 92%;
-    font-size: clamp(0.98rem, 3.8vw, 1.28rem);
-    line-height: 1.22;
-  }
-
-  .link-pill small {
-    margin-top: 12px;
+    max-width: 94%;
+    margin-top: 7px;
+    font-size: clamp(0.78rem, 3.35vw, 0.96rem);
+    line-height: 1.24;
   }
 }
