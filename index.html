@@ -14,10 +14,9 @@
       content="Projects, socials, and selected work by j0nathan1ei."
     />
     <meta property="og:type" content="website" />
-    <meta
-      property="og:image"
-      content="https://avatars.githubusercontent.com/u/87940152?v=4"
-    />
+    <meta property="og:image" content="./assets/profile.jpg" />
+    <link rel="icon" type="image/png" href="./assets/letter-j.png" />
+    <link rel="apple-touch-icon" href="./assets/letter-j.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -27,11 +26,17 @@
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
+    <div class="language-switch" aria-label="Language switch">
+      <button class="lang-option is-active" type="button" data-lang="en">en</button>
+      <span aria-hidden="true">|</span>
+      <button class="lang-option" type="button" data-lang="zh">中文</button>
+    </div>
+
     <main class="page-shell">
       <section class="hero" aria-labelledby="profile-name">
         <img
           class="avatar"
-          src="https://avatars.githubusercontent.com/u/87940152?v=4"
+          src="./assets/profile.jpg"
           alt="j0nathan1ei profile"
         />
         <h1 id="profile-name">j0nathan1ei</h1>
@@ -78,8 +83,14 @@
           target="_blank"
           rel="noreferrer"
         >
-          <span>CityU Maison Fashion Advisor</span>
-          <small>View Details</small>
+          <span
+            data-en="CityU Maison Fashion Advisor"
+            data-zh="CityU Maison 时尚顾问"
+          >CityU Maison Fashion Advisor</span>
+          <small
+            data-en="RAG-Based online fashion recommendation helper"
+            data-zh="基于 RAG 的在线时尚推荐助手"
+          >RAG-Based online fashion recommendation helper</small>
         </a>
 
         <a
@@ -88,8 +99,11 @@
           target="_blank"
           rel="noreferrer"
         >
-          <span>CMHK Package Agent</span>
-          <small>View Details</small>
+          <span data-en="CMHK Package Agent" data-zh="CMHK 套餐助手">CMHK Package Agent</span>
+          <small
+            data-en="AI-powered telecom plan recommendation prototype"
+            data-zh="AI 驱动的电信套餐推荐原型"
+          >AI-powered telecom plan recommendation prototype</small>
         </a>
 
         <a
@@ -98,8 +112,11 @@
           target="_blank"
           rel="noreferrer"
         >
-          <span>NorthStar</span>
-          <small>View Details</small>
+          <span data-en="NorthStar" data-zh="北极星">NorthStar</span>
+          <small
+            data-en="AI-powered interview preparation platform"
+            data-zh="AI 驱动的面试准备平台"
+          >AI-powered interview preparation platform</small>
         </a>
 
         <a
@@ -108,8 +125,14 @@
           target="_blank"
           rel="noreferrer"
         >
-          <span>GenAI Hackathon for SDGs 2025</span>
-          <small>View Details</small>
+          <span
+            data-en="GenAI Hackathon for SDGs 2025"
+            data-zh="2025 可持续发展目标生成式 AI 黑客松"
+          >GenAI Hackathon for SDGs 2025</span>
+          <small
+            data-en="Won the Gold Award with my team"
+            data-zh="与团队共同获得金奖"
+          >Won the Gold Award with my team</small>
         </a>
 
         <a
@@ -118,8 +141,11 @@
           target="_blank"
           rel="noreferrer"
         >
-          <span>SafeHaven</span>
-          <small>View Details</small>
+          <span data-en="SafeHaven" data-zh="SafeHaven 安心港">SafeHaven</span>
+          <small
+            data-en="Privacy-first safety platform for female Uni-students"
+            data-zh="面向女大学生的隐私优先安全平台"
+          >Privacy-first safety platform for female Uni-students</small>
         </a>
 
         <a
@@ -128,8 +154,11 @@
           target="_blank"
           rel="noreferrer"
         >
-          <span>Linkedin</span>
-          <small>View Details</small>
+          <span data-en="Linkedin" data-zh="领英">Linkedin</span>
+          <small
+            data-en="Professional profile and experience."
+            data-zh="职业主页与个人经历。"
+          >Professional profile and experience.</small>
         </a>
 
         <a
@@ -138,8 +167,11 @@
           target="_blank"
           rel="noreferrer"
         >
-          <span>Github</span>
-          <small>View Details</small>
+          <span data-en="Github" data-zh="GitHub">Github</span>
+          <small
+            data-en="Building Al, cloud & intelligent systems."
+            data-zh="构建 AI、云与智能系统。"
+          >Building Al, cloud & intelligent systems.</small>
         </a>
 
         <a
@@ -148,10 +180,14 @@
           target="_blank"
           rel="noreferrer"
         >
-          <span>Instagram</span>
-          <small>View Details</small>
+          <span data-en="Instagram" data-zh="Instagram">Instagram</span>
+          <small
+            data-en="Snapshots, and daily life."
+            data-zh="照片记录与日常生活。"
+          >Snapshots, and daily life.</small>
         </a>
       </section>
     </main>
+    <script src="./script.js"></script>
   </body>
 </html>
