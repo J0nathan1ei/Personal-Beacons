@@ -220,6 +220,18 @@ button {
   line-height: 1.28;
 }
 
+.visitor-count {
+  max-width: min(72vw, 360px);
+  margin: 18px 18px 14px auto;
+  color: rgba(29, 29, 31, 0.38);
+  font-size: 0.72rem;
+  font-weight: 650;
+  line-height: 1.25;
+  text-align: right;
+  letter-spacing: 0;
+  pointer-events: none;
+}
+
 @media (min-width: 980px) {
   .page-shell {
     padding-top: 22px;
@@ -308,6 +320,12 @@ button {
     margin-top: 5px;
     font-size: clamp(0.72rem, 3vw, 0.84rem);
     line-height: 1.24;
+  }
+
+  .visitor-count {
+    margin: 14px 12px 10px auto;
+    max-width: 66vw;
+    font-size: 0.62rem;
   }
 }
 

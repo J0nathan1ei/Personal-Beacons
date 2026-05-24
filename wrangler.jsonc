@@ -1,0 +1,13 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "personal-beacon-counter",
+  "main": "worker/visitor-counter.js",
+  "compatibility_date": "2025-12-01",
+  "workers_dev": true,
+  "kv_namespaces": [
+    {
+      "binding": "VISITOR_COUNTER",
+      "id": "2c3e77f8e6004e6998696ce9b7f9fdf0"
+    }
+  ]
+}
