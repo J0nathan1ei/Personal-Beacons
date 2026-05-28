@@ -105,11 +105,14 @@ button {
 }
 
 .avatar {
-  width: min(300px, 32vw);
-  min-width: 220px;
+  width: min(240px, 25.6vw);
+  min-width: 176px;
   aspect-ratio: 1.12 / 1;
+  height: auto;
   object-fit: cover;
   object-position: 50% 58%;
+  transform: translateY(20%);
+  transform-origin: center center;
   border: 3px solid var(--portrait-edge);
   border-radius: 22px;
   box-shadow:
@@ -248,7 +251,7 @@ button {
   }
 
   .avatar {
-    width: 280px;
+    width: 224px;
   }
 }
 
@@ -278,7 +281,7 @@ button {
   }
 
   .avatar {
-    width: min(54vw, 196px);
+    width: min(43.2vw, 157px);
     min-width: 0;
     border-radius: 16px;
     border-width: 2px;
@@ -349,7 +352,7 @@ button {
 
 @media (max-width: 380px) {
   .avatar {
-    width: min(52vw, 178px);
+    width: min(41.6vw, 142px);
   }
 
   .hero h1 {
